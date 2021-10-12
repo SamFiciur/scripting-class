@@ -8,15 +8,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	
 	<style>
 				
 		body{
 			font-family: 'Roboto', sans-serif;
+			margin: 0;
 		}
 		header{
-			background-color: aqua;
-			color:deeppink;
+			background-color: #691E06;
+			color: #FBBA72;
 			height:50vh;
 			/**this is a flexbox element**/
 			display: flex;
@@ -34,8 +37,8 @@
 		}
 		
 		.flex-container div{
-			background-color: black;
-			color: white;
+			background-color: #8F250C;
+			color: #FBBA72;
 			margin: 10px;
 		}
 		
@@ -54,6 +57,36 @@
 		#item5{
 			flex:25%;
 		}
+		
+		/*footer*/
+		
+		#item6{
+			flex:25%;
+			background-color: transparent;
+		}
+		
+		#item7{
+			flex:50%;
+		
+		}
+		
+		#item8{
+			flex:25%;
+			background-color: transparent;
+		}
+		
+		footer {
+			background-color: #691E06;
+			color: #FBBA72;
+			padding: 50px 0px;
+		}
+		
+		      /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
 		
 	</style>
 </head>
@@ -79,4 +112,15 @@
 	</div>
 	
 </body>
+	
+<footer>
+	
+		<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item7">Made by Sam Ficiur</div>
+		<div id="item8"></div>
+	</div> 
+	
+</footer>
+	
 </html>
